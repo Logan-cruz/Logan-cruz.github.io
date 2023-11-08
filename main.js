@@ -61,7 +61,7 @@ scene.add(lightHelper, gridHelper, axesHelper)
 
 
 
-const controls = new OrbitControls(camera, renderer.domElement)
+
 function newStar() {
   const gemometry = new THREE.SphereGeometry(0.5, 24, 24);
   const material = new THREE.MeshStandardMaterial({ color: generateColor })
