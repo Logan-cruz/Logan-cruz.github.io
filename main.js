@@ -10,8 +10,9 @@ let imgList = [
     "MarchingBand.png",
     "Cert.png",
     "ITF.PNG",
-    "MarchingBand.png",
 ]
+const background = new THREE.TextureLoader().load('img/Background.png')
+scene.background = background
 //adds every image as a plane mesh so we can see it on the scene when its added to the scene
 for (const image in imgList) {
     //every mesh has a geometry, texture and material
@@ -51,7 +52,7 @@ function resizeWindow() {
     else {
         for (const child in scene.children) {
             scene.children[child].rotation.y = 15 * (Math.PI / 180)
-            scene.children[child].position.y = child * -25 + 26
+            scene.children[child].position.y = child * -25 + 30
             scene.children[child].position.x = -10.5
             camera.position.x = 15
         }
