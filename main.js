@@ -19,7 +19,7 @@ for (const image in imgList) {
     console.log(image);
     const geometry = new THREE.PlaneGeometry(30, 20);
     const texture = new THREE.TextureLoader().load('img/' + imgList[image])
-    const material = new THREE.MeshBasicMaterial({ color: 0xa3a2a0, side: THREE.DoubleSide, map: texture });//add the texture image here
+    const material = new THREE.MeshBasicMaterial({ color: 0xb5b3b3, side: THREE.DoubleSide, map: texture });//add the texture image here
     const plane = new THREE.Mesh(geometry, material);
     //add the new plane to the scene
     plane.position.x = -5
